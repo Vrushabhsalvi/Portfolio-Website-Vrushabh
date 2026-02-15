@@ -1,0 +1,27 @@
+body {
+
+scroll-behavior: smooth;
+
+}
+
+.section {
+
+padding: 100px 0;
+
+margin-top: 50px;
+
+}
+
+#home {
+
+background: linear-gradient(to right, #007bff, #00c6ff);
+
+color: white;
+
+height: 100vh;
+
+display: flex;
+
+align-items: center;
+
+}
