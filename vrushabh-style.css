@@ -14,9 +14,9 @@ margin-top: 50px;
 
 #home {
 
-background: linear-gradient(to right, #007bff, #00c6ff);
+background: linear-gradient(to right,#ff000000, #ff000000);
 
-color: white;
+color: rgb(0, 0, 0);
 
 height: 100vh;
 
