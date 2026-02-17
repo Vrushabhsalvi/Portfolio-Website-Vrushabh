@@ -1,7 +1,1 @@
-{
-  "editor.cursorStyle": "block",
-  "editor.cursorBlinking": "blink",
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#FF0078"
-  }
-}
+{}
