@@ -1,89 +1,34 @@
-
-
-// Loader
-
-window.onload=function(){
-
-loader.style.display="none";
-
-};
-
-
-
-// Typing
-
-let text="Frontend Developer";
-
-let i=0;
-
-function typing(){
-
-if(i<text.length){
-
-typing.innerHTML+=text.charAt(i);
-
-i++;
-
-setTimeout(typing,100);
-
+function showMessage(){
+  alert("Thank you for visiting my portfolio");
 }
 
-}
+// Contact form: client-side validation + simulated send
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
 
-typing();
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
 
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
 
+    const success = document.getElementById('contactSuccess');
+    success.classList.remove('d-none');
 
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.disabled = true;
+      const original = btn.innerHTML;
+      btn.innerHTML = 'Sending...';
+      setTimeout(() => { btn.innerHTML = original; btn.disabled = false; }, 1400);
+    }
 
-// Reveal
+    form.reset();
+    form.classList.remove('was-validated');
 
-window.addEventListener("scroll",()=>{
-
-document.querySelectorAll(".reveal").forEach(el=>{
-
-if(el.getBoundingClientRect().top<window.innerHeight-100){
-
-el.classList.add("active");
-
-}
-
+    setTimeout(() => success.classList.add('d-none'), 4000);
+  });
 });
-
-});
-
-
-
-
-// Progress bar
-
-window.addEventListener("scroll",()=>{
-
-let scroll=scrollY;
-
-let height=document.body.scrollHeight-innerHeight;
-
-progress-bar.style.width=(scroll/height)*100+"%";
-
-});
-
-
-
-
-// Dark mode
-
-modeToggle.onclick=()=>{
-
-document.body.classList.toggle("dark");
-
-};
-
-
-
-
-// Contact
-
-contactForm.onsubmit=()=>{
-
-alert("Message sent successfully");
-
-};

@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vrushabh Salvi | Frontend Developer</title>
-
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="vrushabh-style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+body{
+scroll-behavior:smooth;
+}
+
+.section{
+padding:80px 0;
+}
+
+#home{
+height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.project-card{
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
+
+footer{
+background:black;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+</style>
 
 </head>
 
-
+</head>
 <body>
-
-
-<!-- Loader -->
-
-<div id="loader">
-<div class="spinner"></div>
-</div>
-
-
-<!-- Progress Bar -->
-
-<div id="progress-bar"></div>
-
-
 
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold">Vrushabh Salvi</a>
-
+<a class="navbar-brand">Vrushabh</a>
 
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-
 <span class="navbar-toggler-icon"></span>
-
 </button>
-
 
 <div class="collapse navbar-collapse" id="menu">
 
@@ -73,15 +85,11 @@
 
 </ul>
 
-<button id="modeToggle" class="btn btn-warning ms-3">Dark</button>
-
 </div>
 
 </div>
 
 </nav>
-
-
 
 <!-- Home -->
 
@@ -89,124 +97,133 @@
 
 <div class="container text-center">
 
-<h1 class="fw-bold">Hi, I'm Vrushabh Salvi</h1>
+<h1>I am Vrushabh Salvi</h1>
 
-<h3 id="typing"></h3>
+<h3>Frontend Developer [Fresher]</h3>
 
-<p class="lead mt-3">
+<p class="lead">
+Fresher Frontend Developer with live project experience, passionate about building real-world applications and eager to grow into a Full Stack, Cloud, and AI Developer by working on production-level projects and contributing to impactful solutions.</p>
 
-Frontend Developer with real-world project experience building responsive and production-ready websites.
-
-</p>
-
-<a href="#projects" class="btn btn-warning btn-lg mt-3">
-
-View My Work
-
-</a>
+<a href="#projects" class="btn btn-warning">View Projects</a>
 
 </div>
 
 </section>
-
-
-
 <!-- About -->
-
-<section id="about" class="section reveal">
-
+<section id="about" class="section bg-light">
 <div class="container">
 
 <h2 class="text-center mb-4">About Me</h2>
 
 <p>
+I am a passionate Frontend Developer and a fresher with hands-on experience building real-world web applications through live projects. I have developed and deployed projects including a wedding photography business website and a GitHub Profile Finder using REST API integration, which strengthened my practical understanding of modern web development.
 
-I am a Frontend Developer with hands-on experience building real-world web applications including a professional wedding photography business website and GitHub Profile Finder using REST API.
+My core skills include HTML, CSS, JavaScript, Bootstrap, Git, and GitHub. Through these projects, I have gained experience in creating responsive user interfaces, working with real-time data, and writing clean, maintainable code.
 
-I specialize in HTML, CSS, JavaScript, Bootstrap, Git, and GitHub.
+I strongly believe in learning by building real projects, because practical development helps improve problem-solving skills, identify mistakes, and continuously grow as a developer. I am highly motivated to work on more real-world projects, contribute to development teams, and gain professional experience while improving my technical and practical skills.
 
-I am passionate about building clean, responsive, and user-friendly interfaces.
+I am currently seeking an opportunity where I can apply my skills, learn from experienced developers, and grow into a professional software engineer.
+</p>
 
+<div class="mt-4">
+<p><strong>Role:</strong> Frontend Developer (Fresher)</p>
+<p><strong>Project Experience:</strong> 3+ Live Projects</p>
+<p><strong>Focus:</strong> Practical Development & Real-World Projects</p>
+<p><strong>Skills:</strong> HTML, CSS, JavaScript, Bootstrap, Git, GitHub, REST API</p>
+</div>
+<p class="lead">
+Fresher Frontend Developer with live project experience, passionate about building real-world applications and eager to grow into a Full Stack, Cloud, and AI Developer by working on production-level projects, learning continuously, and contributing to impactful software solutions.
 </p>
 
 </div>
-
 </section>
-
-
-
 
 <!-- Skills -->
 
-<section id="skills" class="section reveal">
+<section id="skills" class="section">
 
-<div class="container">
+<div class="container text-center">
 
-<h2 class="text-center mb-4">Skills</h2>
+<h2>Skills</h2>
 
-
-<div class="row g-4">
-
+<div class="row g-4 justify-content-center">
 
 <div class="col-md-3">
-<div class="card skill-card">
-<div class="card-body text-center">
-HTML
-</div>
-</div>
-</div>
 
+<div class="card skill-card">
+
+<div class="card-body">
+<h5>HTML</h5>
+</div>
+</div>
+</div>
 
 <div class="col-md-3">
+
 <div class="card skill-card">
-<div class="card-body text-center">
-CSS
-</div>
-</div>
-</div>
 
-
+<div class="card-body">
+<h5>CSS</h5>
+</div>
+</div>
+</div>
 
 <div class="col-md-3">
+
 <div class="card skill-card">
-<div class="card-body text-center">
-JavaScript
-</div>
-</div>
-</div>
 
-
+<div class="card-body">
+<h5>JavaScript</h5>
+</div>
+</div>
+</div>
 
 <div class="col-md-3">
+
 <div class="card skill-card">
-<div class="card-body text-center">
-Bootstrap
+
+<div class="card-body">
+<h5>Bootstrap</h5>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+
+<div class="card skill-card">
+
+<div class="card-body">
+<h5>Git</h5>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+
+<div class="card skill-card">
+
+<div class="card-body">
+<h5>GitHub</h5>
 </div>
 </div>
 </div>
 
 
 </div>
-
 </div>
-
 </section>
-
-
 
 <!-- Projects -->
 
-<section id="projects" class="section reveal">
+<section id="projects" class="section bg-light">
 
 <div class="container">
 
-<h2 class="text-center mb-4">Projects</h2>
+<h2 class="text-center">Projects</h2>
+<div class="row g-4 justify-content-center">
 
 
-<div class="row g-4">
-
-
-<div class="col-md-4">
+<div class="col-12 col-sm-8 col-md-6 col-lg-4">
 
 <div class="card project-card">
 
@@ -214,21 +231,20 @@ Bootstrap
 
 <h5>Wedding Art Website</h5>
 
-<a href="https://vrushabhsalvi.github.io/The-wedding-art-website-" class="btn btn-dark">
+<p>Professional wedding photography website</p>
 
-Live
-
-</a>
-
-</div>
+<a href="https://github.com/Vrushabhsalvi" class="btn btn-dark">GitHub</a>
+<a href="https://github.com/Vrushabhsalvi/The-wedding-art-website-" class="btn btn-dark">Repository</a>
+<a href="https://vrushabhsalvi.github.io/The-wedding-art-website-/" class="btn btn-dark">Live link</a>
 
 </div>
 
 </div>
 
+</div>
 
 
-<div class="col-md-4">
+<div class="col-12 col-sm-8 col-md-6 col-lg-4">
 
 <div class="card project-card">
 
@@ -236,21 +252,18 @@ Live
 
 <h5>Portfolio Website</h5>
 
-<a href="https://vrushabhsalvi.github.io/Portfolio-Website-Vrushabh" class="btn btn-dark">
+<p>My personal portfolio</p>
 
-Live
-
-</a>
-
+<a href="https://github.com/Vrushabhsalvi" class="btn btn-dark">GitHub</a>
+<a href="https://github.com/Vrushabhsalvi/Portfolio-Website-Vrushabh" class="btn btn-dark">Repository</a>
+<a href="https://vrushabhsalvi.github.io/Portfolio-Website-Vrushabh/" class="btn btn-dark">Live link</a>
 </div>
 
 </div>
 
 </div>
 
-
-
-<div class="col-md-4">
+<div class="col-12 col-sm-8 col-md-6 col-lg-4">
 
 <div class="card project-card">
 
@@ -258,72 +271,98 @@ Live
 
 <h5>GitHub Profile Finder</h5>
 
-<a href="https://vrushabhsalvi.github.io/Github-Profile-Finder" class="btn btn-dark">
+<p>Find GitHub profiles easily</p>
 
-Live
-
-</a>
-
+<a href="https://github.com/Vrushabhsalvi" class="btn btn-dark">GitHub</a>
+<a href="https://github.com/Vrushabhsalvi/Github-Profile-Finder" class="btn btn-dark">Repository</a>
+<a href="https://vrushabhsalvi.github.io/Github-Profile-Finder/" class="btn btn-dark">Live link</a>
 </div>
 
 </div>
 
 </div>
 
-
-
 </div>
 
+</div>
 </div>
 
 </section>
-
-
-
 
 <!-- Contact -->
 
-<section id="contact" class="section reveal">
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="text-center mb-3">Contact</h2>
+    <p class="text-center text-muted mb-4">Want to collaborate or hire? Send a message — I'll reply within 24 hours.</p>
 
-<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="card contact-glass overflow-hidden">
+          <div class="row g-0">
 
-<h2 class="text-center mb-4">Contact</h2>
+            <div class="col-md-5 bg-contact-side p-4 d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="text-white mb-3">Get in touch</h5>
+                <p class="text-white mb-1"><strong>Email:</strong> <a href="mailto:salvivrushabh34@gmail.com" class="text-white">salvivrushabh34@gmail.com</a></p>
+                <p class="text-white mb-3"><strong>Phone:</strong> <a href="tel:+918591215075" class="text-white">+91 85912 15075</a></p>
 
+                <div class="social-icons d-flex gap-2 mt-3">
+                  <a href="https://github.com/Vrushabhsalvi" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">GitHub</a>
+                  <a href="https://www.linkedin.com/in/vrushabh-salvi-a34b85242" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">LinkedIn</a>
+                  <a href="mailto:salvivrushabh34@gmail.com" class="btn btn-outline-light btn-sm">Email</a>
+                </div>
+              </div>
 
-<form id="contactForm" class="text-center">
+              <div class="mt-3 contact-map">
+                <iframe src="https://maps.google.com/maps?q=Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0; width:100%; height:140px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
 
-<input class="form-control mb-3" placeholder="Name" required>
+            <div class="col-md-7 p-4">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div id="contactSuccess" class="alert alert-success d-none" role="alert">Message sent — thank you! I'll reply soon.</div>
 
-<input class="form-control mb-3" placeholder="Email" required>
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
 
-<textarea class="form-control mb-3" placeholder="Message"></textarea>
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="you@example.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
 
-<button class="btn btn-warning">
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="How can I help?" required></textarea>
+                  <div class="invalid-feedback">Please enter a message.</div>
+                </div>
 
-Send Message
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Prefer email? Use <a href="mailto:salvivrushabh34@gmail.com">salvivrushabh34@gmail.com</a></small>
+                  <button type="submit" class="btn btn-submit btn-warning">Send message</button>
+                </div>
+              </form>
+            </div>
 
-</button>
-
-</form>
-
-
-</div>
-
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 <footer>
 
-© 2026 Vrushabh Salvi
+<p>© 2026 Vrushabh Salvi</p>
 
 </footer>
 
-
-<script src="script.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="script.js"></script>
 
 </body>
 
