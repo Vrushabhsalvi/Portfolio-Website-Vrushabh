@@ -25,3 +25,15 @@ display: flex;
 align-items: center;
 
 }
+
+/* Skills card spacing & appearance */
+#skills .row { gap: 1rem; }
+.skill-card { margin: 0; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); transition: transform .18s ease, box-shadow .18s ease; }
+.skill-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+.skill-card .card-body { padding: 1.25rem; text-align: center; }
+
+/* Projects: spacing + card styling */
+#projects .row { gap: 1rem; }
+.project-card { margin: 0; border-radius: 8px; box-shadow: 0 8px 24px rgba(2,6,23,0.06); transition: transform .18s ease, box-shadow .18s ease; }
+.project-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(2,6,23,0.12); }
+.project-card .card-body { padding: 1.25rem; }
