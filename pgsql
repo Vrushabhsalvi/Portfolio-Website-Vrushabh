@@ -1,5 +1,6 @@
-portfolio-website
+portfolio
 │
-├── index.html
-├── style.css
-└── script.js
+index.html
+vrushabh-style.css
+script.js
+profile.jpg   
