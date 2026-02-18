@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "name": "Attach to Chrome",
             "port": 9222,
@@ -38,7 +39,7 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-                
+                "type": "chrome",
             "name": "Launch Microsoft Edge",
             "request": "launch",
             "runtimeArgs": [
@@ -50,7 +51,7 @@
             }
         },
         {
-            
+            "type": "chrome",
             "name": "Launch Microsoft Edge in headless mode",
             "request": "launch",
             "runtimeArgs": [
