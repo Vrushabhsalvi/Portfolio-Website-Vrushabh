@@ -1,9 +1,9 @@
 # Document Heading
 
-portfolio
+portfolio/
 │
-index.html
-vrushabh-style.css
-script.js
-profile.jpg.jpeg
-c:\Users\brushabh\Downloads\profile.jpg.jpeg
+├── index.html
+├── vrushabh-style.css
+├── script.js
+└── c:\Users\brushabh\Downloads\profile.jpg.jpeg
+profile.jpg.jpeg   <-- (Copy your file from Downloads to here)
