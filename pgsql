@@ -7,3 +7,4 @@ portfolio/
 ├── script.js
 └── c:\Users\brushabh\Downloads\profile.jpg.jpeg
 profile.jpg.jpeg   <-- (Copy your file from Downloads to here)
+����
