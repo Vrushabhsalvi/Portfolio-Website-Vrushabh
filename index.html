@@ -1,59 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vrushabh Salvi | Frontend Developer</title>
+
 <link rel="stylesheet" href="vrushabh-style.css">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
 
-body{
-scroll-behavior:smooth;
-}
-
-.section{
-padding:80px 0;
-}
-
-#home{
-height:100vh;
-display:flex;
-align-items:center;
-background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
-color:white;
-}
-
-.project-card{
-transition:0.3s;
-}
-
-.project-card:hover{
-transform:scale(1.05);
-}
-
-footer{
-background:black;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 </head>
 
-</head>
 <body>
 
-<!-- Navbar -->
 
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
 
 <div class="container">
 
-<a class="navbar-brand">Vrushabh</a>
+<a class="navbar-brand" href="#">Vrushabh Salvi</a>
 
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
 <span class="navbar-toggler-icon"></span>
@@ -72,14 +43,6 @@ text-align:center;
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#skills">Skills</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#projects">Projects</a>
-</li>
-
-<li class="nav-item">
 <a class="nav-link" href="#contact">Contact</a>
 </li>
 
@@ -90,286 +53,10 @@ text-align:center;
 </div>
 
 </nav>
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white border-bottom px-lg-5">
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-dark" href="#">VRUSHABH</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto fw-medium">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
-<section id="home" class="home-hero d-flex align-items-center">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 text-center text-lg-start">
-                <div class="status-badge mb-4">
-                    <span class="dot"></span> Available for Hire & Collaboration
-                </div>
-                <h1 class="display-2 fw-bold main-title mb-2">
-                    Hi, I'm <span class="text-indigo">Vrushabh Salvi</span>
-                </h1>
-                <h2 class="h3 mb-4 text-muted fw-normal">Frontend Developer | Digital Architect</h2>
-                <p class="lead mb-5 text-dark-50">
-                    I build modern, high-performance, real-world web applications with a focus on clean code. 
-                    Passionate about evolving into a <strong>Full Stack, Cloud, and AI Developer</strong> 
-                    through production-level engineering.
-                </p>
-                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                    <a href="#projects" class="btn btn-primary-custom">View My Work</a>
-                    <a href="#contact" class="btn btn-outline-custom">Let's Talk</a>
-                </div>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block">
-                <div class="image-wrapper text-center">
-                    <div class="image-bg-blob"></div>
-                    <img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg" alt="Vrushabh Salvi" class="img-fluid profile-hero">
-                    <div class="floating-stat shadow-sm">
-                        <h4 class="mb-0 fw-bold">3+</h4>
-                        <small class="text-muted">Live Projects</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="about" class="about-section py-5 bg-light-gray">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 order-2 order-lg-1">
-                <h2 class="display-5 fw-bold mb-4">About <span class="text-indigo">Me</span></h2>
-                <p class="about-text text-muted mb-4 lead">
-                    I am a passionate Frontend Developer and fresher with hands-on experience building real-world web applications. 
-                    I bridge the gap between complex logic and seamless user experience through <strong>learning by building.</strong>
-                </p>
-                
-                <div class="row g-3 mb-5">
-                    <div class="col-md-6">
-                        <div class="about-feature">
-                            <h6 class="fw-bold"><i class="bi bi-cpu"></i> Practical Approach</h6>
-                            <p class="small text-muted mb-0">Deployed production sites for photography businesses and API-integrated tools.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-feature">
-                            <h6 class="fw-bold"><i class="bi bi-shield-check"></i> Problem Solver</h6>
-                            <p class="small text-muted mb-0">Strong focus on writing clean, maintainable, and structured code architecture.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-feature">
-                            <h6 class="fw-bold"><i class="bi bi-graph-up"></i> Future Focused</h6>
-                            <p class="small text-muted mb-0">Scaling skills towards Full Stack development, Cloud services, and AI solutions.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-feature">
-                            <h6 class="fw-bold"><i class="bi bi-code-square"></i> Core Skills</h6>
-                            <p class="small text-muted mb-0">Expertise in HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Git, and REST APIs.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="d-flex gap-3">
-                    <a href="#contact" class="btn btn-primary-custom">Contact Me</a>
-                    <a href="resume.pdf" class="btn btn-outline-custom">Download Resume</a>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 order-1 order-lg-2">
-                <div class="info-card-modern shadow-lg p-5 bg-white border-0">
-                    <div class="text-center mb-4">
-                        <img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg" class="rounded-circle profile-mini mb-3 shadow" alt="Vrushabh">
-                        <h4 class="fw-bold mb-0">Vrushabh Salvi</h4>
-                        <p class="text-indigo fw-medium">Frontend Developer (Fresher)</p>
-                    </div>
-                    <hr class="opacity-10">
-                    <ul class="list-unstyled detail-list">
-                        <li><span class="label">Location:</span> Mumbai, India</li>
-                        <li><span class="label">Focus:</span> UI/UX & Real-time APIs</li>
-                        <li><span class="label">Experience:</span> 3+ Live Projects</li>
-                        <li><span class="label">Goal:</span> Full Stack Engineer</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Home -->
-
-<section id="home">
-
-<div class="container text-center">
-
-<h1>I am Vrushabh Salvi</h1>
-
-<h3>Frontend Developer [Fresher]</h3>
-
-<p class="lead">
-Fresher Frontend Developer with live project experience, passionate about building real-world applications and eager to grow into a Full Stack, Cloud, and AI Developer by working on production-level projects and contributing to impactful solutions.</p>
-
-<a href="#projects" class="btn btn-warning">View Projects</a>
-
-</div>
-
-</section>
-
-<section id="home" class="d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7 text-start">
-        <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill">Available for Hire</span>
-        <h1 class="display-3 fw-bold mb-2">Hi, I'm <span class="text-warning">Vrushabh Salvi</span></h1>
-        <h2 class="h3 mb-4 text-secondary">Crafting Digital Experiences as a Frontend Developer</h2>
-        <p class="lead mb-5 opacity-75">
-          I specialize in building responsive, high-performance web applications. Currently a fresher with a passion for <strong>Full Stack, Cloud, and AI integration.</strong>
-        </p>
-        <div class="d-flex gap-3">
-          <a href="#projects" class="btn btn-warning btn-lg px-4 fw-bold">View My Work</a>
-          <a href="#contact" class="btn btn-outline-light btn-lg px-4">Let's Talk</a>
-        </div>
-      </div>
-      <div class="col-lg-5 d-none d-lg-block">
-         <div class="hero-shape"></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Home Section -->
-<section id="home" class="home-section">
-<div class="container">
-<div class="row align-items-center">
-
-<!-- Left -->
-<div class="col-md-6 text-md-start text-center">
-
-<h4 class="hello">Hello, I'm</h4>
-
-<h1 class="name">
-Vrushabh <span class="highlight">Salvi</span>
-</h1>
-
-<h3 class="role">
-Frontend Developer
-</h3>
-
-<p class="home-desc">
-I build modern, responsive, real-world websites using clean code and best frontend practices.
-My goal is to become a Full Stack, Cloud, and AI Developer by working on production-level applications.
-</p>
-
-<div class="home-buttons">
-
-<a href="#projects" class="btn btn-warning btn-lg">
-View Projects
-</a>
-
-<a href="#contact" class="btn btn-outline-light btn-lg">
-Hire Me
-</a>
-
-</div>
-
-</div>
-
-<!-- Right -->
-<div class="col-md-6 text-center">
-
-<img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg"
-class="home-img"
-alt="Vrushabh Salvi">
-
-</div>
-
-</div>
-</div>
-</section>
-<section id="home" class="home-section d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-7 text-md-start text-center">
-        <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill shadow-sm">Available for Hire</span>
-        <h4 class="hello mb-1 text-light opacity-75">Hello, I'm</h4>
-        <h1 class="name display-3 fw-bold">
-          Vrushabh <span class="highlight">Salvi</span>
-        </h1>
-        <h2 class="role h3 mb-4">Frontend Developer [Fresher]</h2>
-        <p class="home-desc lead mb-5 opacity-75">
-          I build modern, responsive, real-world websites using clean code and best frontend practices. 
-          Eager to grow into a Full Stack, Cloud, and AI Developer.
-        </p>
-        <div class="home-buttons">
-          <a href="#projects" class="btn btn-warning btn-lg px-4 fw-bold me-3">View Projects</a>
-          <a href="#contact" class="btn btn-outline-light btn-lg px-4">Hire Me</a>
-        </div>
-      </div>
-      <div class="col-md-5 text-center d-none d-md-block">
-        <div class="position-relative">
-          <div class="hero-shape"></div>
-          <img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg" class="home-img position-relative" alt="Vrushabh Salvi" onerror="this.style.display='none'">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= HOME SECTION ================= -->
-<section id="home" class="home-section d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Left Content -->
-      <div class="col-lg-7 text-center text-lg-start">
-
-        <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill">
-          Available for Hire
-        </span>
-
-        <h1 class="display-3 fw-bold mb-3">
-          Hi, I'm <span class="text-warning">Vrushabh Salvi</span>
-        </h1>
-
-        <h2 class="h4 mb-4 text-light opacity-75">
-          Frontend Developer | Building Modern Web Experiences
-        </h2>
-
-        <p class="lead mb-5 opacity-75">
-          I specialize in creating responsive, high-performance web applications.
-          Passionate about growing into a <strong>Full Stack, Cloud & AI Developer</strong>
-          through real-world production projects.
-        </p>
-
-        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-          <a href="#projects" class="btn btn-warning btn-lg px-4 fw-bold">
-            View My Work
-          </a>
-          <a href="#contact" class="btn btn-outline-light btn-lg px-4">
-            Let's Talk
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Right Shape Animation -->
-      <div class="col-lg-5 d-none d-lg-block text-center">
-        <div class="hero-shape"></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= HOME SECTION ================= -->
+<!-- HOME -->
 
 <section id="home" class="home-section">
 
@@ -378,98 +65,16 @@ alt="Vrushabh Salvi">
 <div class="row align-items-center">
 
 
-<!-- LEFT CONTENT -->
-<div class="col-lg-7 text-center text-lg-start">
 
-<span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill">
+<div class="col-lg-6">
+
+<div class="hire-badge">
+
+<span class="dot"></span>
+
 Available for Hire
-</span>
-
-
-<h1 class="display-3 fw-bold mb-3">
-
-Hi, I'm
-
-<span class="highlight">
-Vrushabh Salvi
-</span>
-
-</h1>
-
-
-<h2 class="h3 mb-4 text-light opacity-75">
-
-Frontend Developer
-
-</h2>
-
-
-<p class="home-desc">
-
-I specialize in building modern, responsive, real-world web applications using clean code and professional frontend practices.
-
-My goal is to grow into a Full Stack, Cloud, and AI Developer by working on production-level software.
-
-</p>
-
-
-<div class="home-buttons">
-
-<a href="#projects" class="btn btn-warning btn-lg">
-
-View Projects
-
-</a>
-
-
-<a href="#contact" class="btn btn-outline-light btn-lg">
-
-Hire Me
-
-</a>
-
 
 </div>
-
-</div>
-
-
-
-<!-- RIGHT CONTENT -->
-<div class="col-lg-5 text-center mt-5 mt-lg-0">
-
-
-<img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg"
-
-class="home-img"
-
-alt="Vrushabh Salvi">
-
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= HOME SECTION ================= -->
-
-<section id="home" class="home-section">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-
-<!-- LEFT CONTENT -->
-<div class="col-lg-7 text-center text-lg-start">
-
-<span class="status-badge">
-Available for Hire
-</span>
 
 
 <h1 class="home-title">
@@ -477,67 +82,54 @@ Available for Hire
 Hi, I'm
 
 <span class="gradient-text">
-
 Vrushabh Salvi
-
 </span>
 
 </h1>
 
 
-<h2 class="home-subtitle">
+<h3 class="home-role">
 
-Frontend Developer crafting modern, scalable & real-world web applications
+Frontend Developer • Problem Solver
 
-</h2>
+</h3>
 
 
-<p class="home-description">
+<p class="home-desc">
 
-Frontend Developer with hands-on experience building and deploying live production websites and API-based applications. I specialize in creating responsive, high-performance interfaces using modern frontend technologies.
-
-My mission is to grow into a Full Stack, Cloud, and AI Developer by contributing to impactful real-world products and working with professional development teams.
+I build professional real-world websites using modern frontend technologies.
+Focused on clean UI, performance, and practical development.
 
 </p>
 
 
-<div class="home-buttons">
-
-<a href="#projects" class="btn-primary-custom">
-
+<a href="#about" class="btn-main">
 View My Work
-
 </a>
 
 
-<a href="#contact" class="btn-secondary-custom">
-
-Let's Talk
-
+<a href="#contact" class="btn-outline-main">
+Hire Me
 </a>
 
 
 </div>
 
 
-</div>
 
 
+<div class="col-lg-6 text-center">
 
-<!-- RIGHT IMAGE -->
-<div class="col-lg-5 text-center mt-5 mt-lg-0">
+<div class="image-container">
 
-<div class="image-wrapper">
+<div class="blob"></div>
 
-<img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg"
-
-class="profile-image"
-
-alt="Vrushabh Salvi">
+<img src="profile.jpg" class="profile-image">
 
 </div>
 
 </div>
+
 
 
 </div>
@@ -547,9 +139,9 @@ alt="Vrushabh Salvi">
 </section>
 
 
-<!-- About -->
 
-<!-- ================= ABOUT SECTION ================= -->
+
+<!-- ABOUT -->
 
 <section id="about" class="about-section">
 
@@ -558,800 +150,144 @@ alt="Vrushabh Salvi">
 <div class="row align-items-center">
 
 
+<div class="col-lg-5 text-center">
 
-<!-- LEFT IMAGE -->
-<div class="col-lg-5 text-center mb-5 mb-lg-0">
-
-<img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg"
-
-class="about-image"
-
-alt="Vrushabh Salvi">
+<img src="profile.jpg" class="about-image">
 
 </div>
 
 
 
-<!-- RIGHT CONTENT -->
 <div class="col-lg-7">
 
-
 <h2 class="section-title">
-
 About Me
-
 </h2>
 
 
+<p class="about-text">
 
-<p class="about-description">
+Frontend Developer with real project experience.
+Focused on building professional websites and growing into a software engineer.
 
-I am a passionate Frontend Developer with practical experience building and deploying real-world web applications.
-
-I have successfully developed live projects including:
-
-• Wedding Photography Business Website  
-• GitHub Profile Finder using REST API  
-• Personal Portfolio Website  
-
-Through these projects, I gained strong experience in responsive design, real-time data integration, performance optimization, and writing clean, maintainable frontend code.
-
-I strongly believe in learning by building real products, solving real problems, and continuously improving development skills.
-
-I am currently seeking an opportunity where I can contribute, learn from experienced developers, and grow into a professional Full Stack and AI Developer.
+Strong in UI design, debugging, and real-world development.
 
 </p>
 
 
 
-<!-- INFO CARDS -->
-
-<div class="about-highlights">
+<div class="row">
 
 
-<div class="highlight-card">
+<div class="col-md-6">
+
+<div class="about-card">
 
 <h4>3+ Live Projects</h4>
 
-<p>Built and deployed real-world production websites</p>
+<p>Professional experience</p>
+
+</div>
 
 </div>
 
 
+<div class="col-md-6">
 
-<div class="highlight-card">
+<div class="about-card">
 
 <h4>Problem Solver</h4>
 
-<p>Strong ability to solve real development challenges</p>
+<p>Strong logic & debugging</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="about-card">
+
+<h4>Focused Learner</h4>
+
+<p>Continuous improvement</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="about-card">
+
+<h4>Career Goal</h4>
+
+<p>Software Engineer</p>
+
+</div>
+
+</div>
+
 
 </div>
 
 
 
-<div class="highlight-card">
-
-<h4>Focus</h4>
-
-<p>Clean code, scalable structure, performance optimization</p>
-
-</div>
-
-
-
-<div class="highlight-card">
-
-<h4>Skills</h4>
-
-<p>HTML, CSS, JavaScript, Bootstrap, Git, GitHub, REST APIs</p>
-
-</div>
-
-
-
-<div class="highlight-card">
-
-<h4>Goal</h4>
-
-<p>Full Stack, Cloud and AI Developer</p>
-
-</div>
-
-
-
-</div>
-
-
-
-<!-- BUTTONS -->
-
-<div class="about-buttons">
-
-
-<a href="#contact" class="btn-primary-custom">
-
+<a href="#contact" class="btn-main">
 Contact Me
-
 </a>
 
 
-<a href="resume.pdf" class="btn-secondary-custom">
-
+<a href="#" class="btn-outline-main">
 Download Resume
-
 </a>
 
 
 </div>
 
 
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="about" class="section bg-light">
-<div class="container">
-
-<h2 class="text-center mb-4">About Me</h2>
-
-<p>
-I am a passionate Frontend Developer and a fresher with hands-on experience building real-world web applications through live projects. I have developed and deployed projects including a wedding photography business website and a GitHub Profile Finder using REST API integration, which strengthened my practical understanding of modern web development.
-
-My core skills include HTML, CSS, JavaScript, Bootstrap, Git, and GitHub. Through these projects, I have gained experience in creating responsive user interfaces, working with real-time data, and writing clean, maintainable code.
-
-I strongly believe in learning by building real projects, because practical development helps improve problem-solving skills, identify mistakes, and continuously grow as a developer. I am highly motivated to work on more real-world projects, contribute to development teams, and gain professional experience while improving my technical and practical skills.
-
-I am currently seeking an opportunity where I can apply my skills, learn from experienced developers, and grow into a professional software engineer.
-</p>
-
-<div class="mt-4">
-<p><strong>Role:</strong> Frontend Developer (Fresher)</p>
-<p><strong>Project Experience:</strong> 3+ Live Projects</p>
-<p><strong>Focus:</strong> Practical Development & Real-World Projects</p>
-<p><strong>Skills:</strong> HTML, CSS, JavaScript, Bootstrap, Git, GitHub, REST API</p>
-</div>
-<p class="lead">
-Fresher Frontend Developer with live project experience, passionate about building real-world applications and eager to grow into a Full Stack, Cloud, and AI Developer by working on production-level projects, learning continuously, and contributing to impactful software solutions.
-</p>
-
-</div>
-</section
-
-<section id="about" class="section">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-md-6">
-        <h2 class="display-5 fw-bold mb-4">About <span class="text-warning">Me</span></h2>
-        <p class="text-muted fs-5">
-          I don't just write code; I build solutions. As a developer, I bridge the gap between complex backend logic and a seamless user experience.
-        </p>
-        <div class="about-features mt-4">
-          <div class="d-flex align-items-start mb-3">
-            <div class="feature-icon bg-warning-subtle p-2 rounded me-3">🚀</div>
-            <div>
-              <h6 class="mb-0 fw-bold">Practical Approach</h6>
-              <small class="text-muted">3+ Live projects delivered with production-level standards.</small>
-            </div>
-          </div>
-          <div class="d-flex align-items-start mb-3">
-            <div class="feature-icon bg-warning-subtle p-2 rounded me-3">💡</div>
-            <div>
-              <h6 class="mb-0 fw-bold">Problem Solver</h6>
-              <small class="text-muted">Focused on clean, maintainable, and scalable code architecture.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card border-0 shadow-lg p-4 bg-white rounded-4">
-           <ul class="list-unstyled mb-0">
-             <li class="mb-3"><strong>Name:</strong> Vrushabh Salvi</li>
-             <li class="mb-3"><strong>Role:</strong> Frontend Developer (Fresher)</li>
-             <li class="mb-3"><strong>Location:</strong> Mumbai, India</li>
-             <li class="mb-3"><strong>Tech Stack:</strong> HTML, CSS, JS, Bootstrap, Git</li>
-             <li><a href="#" class="btn btn-dark w-100 mt-2">Download Resume</a></li>
-           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- About Section -->
-<section id="about" class="section bg-light">
-
-<div class="container">
-
-<h2 class="text-center mb-5">
-About Me
-</h2>
-
-<div class="row align-items-center">
-
-<!-- Image -->
-<div class="col-md-5 text-center">
-
-<img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg"
-
-class="about-img"
-alt="Vrushabh">
-
-</div>
-
-
-<!-- Content -->
-<div class="col-md-7">
-
-<h3 class="about-title">
-
-Passionate Frontend Developer
-
-</h3>
-
-
-<p class="about-text">
-
-I am a Frontend Developer fresher with hands-on experience building real-world projects.
-
-I have created live websites including:
-
-Wedding Photography Business Website  
-GitHub Profile Finder using REST API  
-Personal Portfolio Website  
-
-These projects helped me understand professional frontend development.
-
-</p>
-
-
-<div class="about-info">
-
-<p>
-
-<strong>Experience:</strong> 3+ Live Projects
-
-</p>
-
-<p>
-
-<strong>Skills:</strong>
-
-HTML, CSS, JavaScript, Bootstrap, Git, GitHub
-
-</p>
-
-<p>
-
-<strong>Goal:</strong>
-
-Full Stack & AI Developer
-
-</p>
-
-</div>
-
-
-<a href="#contact" class="btn btn-warning mt-3">
-
-Contact Me
-
-</a>
-
-</div>
-
 </div>
 
 </div>
 
 </section>
 
-<section id="about" class="section bg-light">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-md-5 text-center">
-        <img src="C:\Users\brushabh\Downloads\vrushabh-photo.jpg.jpeg" class="about-img img-fluid" alt="Vrushabh Profile" onerror="this.style.backgroundColor='#ddd'">
-      </div>
-      <div class="col-md-7">
-        <h2 class="display-5 fw-bold mb-4">About <span class="highlight text-dark">Me</span></h2>
-        <h3 class="about-title h4 text-secondary mb-3">Passionate Frontend Developer</h3>
-        <p class="about-text text-muted mb-4">
-          I am a Frontend Developer fresher with hands-on experience building real-world projects. I believe in learning by building, which helps in mastering problem-solving skills and writing maintainable code.
-        </p>
-        
-        <div class="row g-3 mb-4">
-          <div class="col-sm-6">
-            <div class="p-3 border-start border-warning border-4 bg-white shadow-sm">
-              <h6 class="fw-bold mb-1">Experience</h6>
-              <p class="small text-muted mb-0">3+ Live Projects</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="p-3 border-start border-warning border-4 bg-white shadow-sm">
-              <h6 class="fw-bold mb-1">Goal</h6>
-              <p class="small text-muted mb-0">Full Stack & AI Dev</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="about-features">
-          <div class="d-flex align-items-center mb-3">
-            <div class="feature-icon bg-warning-subtle text-warning rounded-circle me-3">🚀</div>
-            <p class="mb-0"><strong>Focus:</strong> Production-level standards & scalability.</p>
-          </div>
-          <div class="d-flex align-items-center mb-4">
-            <div class="feature-icon bg-warning-subtle text-warning rounded-circle me-3">💡</div>
-            <p class="mb-0"><strong>Skills:</strong> HTML, CSS, JS, Bootstrap, Git, REST APIs.</p>
-          </div>
-        </div>
-        
-        <a href="#contact" class="btn btn-warning px-4 py-2 fw-bold">Contact Me</a>
-        <a href="#" class="btn btn-outline-dark ms-2 px-4 py-2 fw-bold">Download CV</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ================= ABOUT SECTION ================= -->
-<section id="about" class="section bg-light">
-  <div class="container">
-    <div class="row g-5 align-items-center">
 
-      <!-- Left Content -->
-      <div class="col-md-6">
+<!-- CONTACT -->
 
-        <h2 class="display-5 fw-bold mb-4">
-          About <span class="text-warning">Me</span>
-        </h2>
-
-        <p class="text-muted fs-5">
-          I am a Frontend Developer with hands-on experience building real-world applications.
-          I focus on clean code, responsive UI, and scalable structure.
-        </p>
-
-        <div class="mt-4">
-
-          <div class="d-flex align-items-start mb-3">
-            <div class="feature-icon bg-warning-subtle rounded me-3">🚀</div>
-            <div>
-              <h6 class="fw-bold mb-1">3+ Live Projects</h6>
-              <small class="text-muted">
-                Delivered production-ready projects including business website and API-based applications.
-              </small>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-start mb-3">
-            <div class="feature-icon bg-warning-subtle rounded me-3">💡</div>
-            <div>
-              <h6 class="fw-bold mb-1">Problem Solver</h6>
-              <small class="text-muted">
-                Strong focus on writing maintainable, structured, and optimized frontend code.
-              </small>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- Right Info Card -->
-      <div class="col-md-6">
-        <div class="card border-0 shadow-lg p-4 rounded-4">
-          <ul class="list-unstyled mb-0">
-
-            <li class="mb-3">
-              <strong>Name:</strong> Vrushabh Salvi
-            </li>
-
-            <li class="mb-3">
-              <strong>Role:</strong> Frontend Developer (Fresher)
-            </li>
-
-            <li class="mb-3">
-              <strong>Location:</strong> Mumbai, India
-            </li>
-
-            <li class="mb-3">
-              <strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Git, GitHub
-            </li>
-
-            <li>
-              <a href="#" class="btn btn-dark w-100 mt-2">
-                Download Resume
-              </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT SECTION ================= -->
-
-<section id="about" class="section bg-light">
-
-
-<div class="container">
-
-
-<h2 class="text-center mb-5">
-
-About
-
-<span class="text-warning">
-
-Me
-
-</span>
-
-</h2>
-
-
-
-<div class="row align-items-center">
-
-
-
-<!-- IMAGE -->
-
-<div class="col-lg-5 text-center mb-4 mb-lg-0">
-
-
-<img src="vrushabh-photo.jpg"
-
-class="about-img"
-
-alt="Vrushabh Salvi">
-
-
-</div>
-
-
-
-<!-- CONTENT -->
-
-<div class="col-lg-7">
-
-
-<h3 class="about-title">
-
-Passionate Frontend Developer
-
-</h3>
-
-
-
-<p class="about-text">
-
-
-I am a Frontend Developer fresher with hands-on experience building real-world live projects.
-
-I have developed and deployed:
-
-• Wedding Photography Business Website  
-• GitHub Profile Finder using REST API  
-• Personal Portfolio Website  
-
-
-These projects helped me gain practical experience in responsive design, real-time data integration, and professional frontend development.
-
-
-</p>
-
-
-
-<div class="about-info mt-4">
-
-
-<p>
-
-<strong>Name:</strong>
-
-Vrushabh Salvi
-
-</p>
-
-
-<p>
-
-<strong>Role:</strong>
-
-Frontend Developer (Fresher)
-
-</p>
-
-
-<p>
-
-<strong>Location:</strong>
-
-Mumbai, India
-
-</p>
-
-
-<p>
-
-<strong>Experience:</strong>
-
-3+ Live Projects
-
-</p>
-
-
-<p>
-
-<strong>Skills:</strong>
-
-HTML, CSS, JavaScript, Bootstrap, Git, GitHub
-
-</p>
-
-
-</div>
-
-
-
-<a href="#contact"
-
-class="btn btn-warning mt-4">
-
-Contact Me
-
-</a>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- Skills -->
-
-<section id="skills" class="section">
+<section id="contact" class="contact-section">
 
 <div class="container text-center">
 
-<h2>Skills</h2>
-
-<div class="row g-4 justify-content-center">
-
-<div class="col-md-3">
-
-<div class="card skill-card">
-
-<div class="card-body">
-<h5>HTML</h5>
-</div>
-</div>
-</div>
-
-<div class="col-md-3">
-
-<div class="card skill-card">
-
-<div class="card-body">
-<h5>CSS</h5>
-</div>
-</div>
-</div>
-
-<div class="col-md-3">
-
-<div class="card skill-card">
-
-<div class="card-body">
-<h5>JavaScript</h5>
-</div>
-</div>
-</div>
-
-<div class="col-md-3">
-
-<div class="card skill-card">
-
-<div class="card-body">
-<h5>Bootstrap</h5>
-</div>
-</div>
-</div>
-
-<div class="col-md-3">
-
-<div class="card skill-card">
-
-<div class="card-body">
-<h5>Git</h5>
-</div>
-</div>
-</div>
-
-<div class="col-md-3">
-
-<div class="card skill-card">
-
-<div class="card-body">
-<h5>GitHub</h5>
-</div>
-</div>
-</div>
+<h2 class="section-title">
+Contact Me
+</h2>
 
 
-</div>
-</div>
-</section>
+<p>Email: vrushabh@email.com</p>
 
-<!-- Projects -->
-
-<section id="projects" class="section bg-light">
-
-<div class="container">
-
-<h2 class="text-center">Projects</h2>
-<div class="row g-4 justify-content-center">
+<p>Phone: +91 0000000000</p>
 
 
-<div class="col-12 col-sm-8 col-md-6 col-lg-4">
-
-<div class="card project-card">
-
-<div class="card-body">
-
-<h5>Wedding Art Website</h5>
-
-<p>Professional wedding photography website</p>
-
-<a href="https://github.com/Vrushabhsalvi" class="btn btn-dark">GitHub</a>
-<a href="https://github.com/Vrushabhsalvi/The-wedding-art-website-" class="btn btn-dark">Repository</a>
-<a href="https://vrushabhsalvi.github.io/The-wedding-art-website-/" class="btn btn-dark">Live link</a>
-
-</div>
-
-</div>
-
-</div>
+<button onclick="showMessage()" class="btn-main">
+Send Message
+</button>
 
 
-<div class="col-12 col-sm-8 col-md-6 col-lg-4">
-
-<div class="card project-card">
-
-<div class="card-body">
-
-<h5>Portfolio Website</h5>
-
-<p>My personal portfolio</p>
-
-<a href="https://github.com/Vrushabhsalvi" class="btn btn-dark">GitHub</a>
-<a href="https://github.com/Vrushabhsalvi/Portfolio-Website-Vrushabh" class="btn btn-dark">Repository</a>
-<a href="https://vrushabhsalvi.github.io/Portfolio-Website-Vrushabh/" class="btn btn-dark">Live link</a>
-</div>
-
-</div>
-
-</div>
-
-<div class="col-12 col-sm-8 col-md-6 col-lg-4">
-
-<div class="card project-card">
-
-<div class="card-body">
-
-<h5>GitHub Profile Finder</h5>
-
-<p>Find GitHub profiles easily</p>
-
-<a href="https://github.com/Vrushabhsalvi" class="btn btn-dark">GitHub</a>
-<a href="https://github.com/Vrushabhsalvi/Github-Profile-Finder" class="btn btn-dark">Repository</a>
-<a href="https://vrushabhsalvi.github.io/Github-Profile-Finder/" class="btn btn-dark">Live link</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 </div>
 
 </section>
 
-<!-- Contact -->
 
-<section id="contact" class="section">
-  <div class="container">
-    <h2 class="text-center mb-3">Contact</h2>
-    <p class="text-center text-muted mb-4">Want to collaborate or hire? Send a message — I'll reply within 24 hours.</p>
 
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        <div class="card contact-glass overflow-hidden">
-          <div class="row g-0">
-
-            <div class="col-md-5 bg-contact-side p-4 d-flex flex-column justify-content-between">
-              <div>
-                <h5 class="text-white mb-3">Get in touch</h5>
-                <p class="text-white mb-1"><strong>Email:</strong> <a href="mailto:salvivrushabh34@gmail.com" class="text-white">salvivrushabh34@gmail.com</a></p>
-                <p class="text-white mb-3"><strong>Phone:</strong> <a href="tel:+918591215075" class="text-white">+91 85912 15075</a></p>
-
-                <div class="social-icons d-flex gap-2 mt-3">
-                  <a href="https://github.com/Vrushabhsalvi" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">GitHub</a>
-                  <a href="https://www.linkedin.com/in/vrushabh-salvi-a34b85242" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">LinkedIn</a>
-                  <a href="mailto:salvivrushabh34@gmail.com" class="btn btn-outline-light btn-sm">Email</a>
-                </div>
-              </div>
-
-              <div class="mt-3 contact-map">
-                <iframe src="https://maps.google.com/maps?q=Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0; width:100%; height:140px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-
-            <div class="col-md-7 p-4">
-              <form id="contactForm" class="contact-form" novalidate>
-                <div id="contactSuccess" class="alert alert-success d-none" role="alert">Message sent — thank you! I'll reply soon.</div>
-
-                <div class="mb-3">
-                  <label for="contactName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
-                  <div class="invalid-feedback">Please enter your name.</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="contactEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="contactEmail" placeholder="you@example.com" required>
-                  <div class="invalid-feedback">Please enter a valid email address.</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="contactMessage" class="form-label">Message</label>
-                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="How can I help?" required></textarea>
-                  <div class="invalid-feedback">Please enter a message.</div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Prefer email? Use <a href="mailto:salvivrushabh34@gmail.com">salvivrushabh34@gmail.com</a></small>
-                  <button type="submit" class="btn btn-submit btn-warning">Send message</button>
-                </div>
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-
-<p>© 2026 Vrushabh Salvi</p>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+</body>
 </html>
