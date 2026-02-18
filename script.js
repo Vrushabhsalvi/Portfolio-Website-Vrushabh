@@ -1,39 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Navbar scroll effect
+    // 1. Navbar Shadow on Scroll
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            nav.style.padding = '0.8rem 0';
-            nav.style.background = 'rgba(5, 8, 16, 0.98)';
+        if (window.scrollY > 20) {
+            nav.classList.add('shadow-sm');
         } else {
-            nav.style.padding = '1.2rem 0';
-            nav.style.background = 'rgba(5, 8, 16, 0.9)';
+            nav.classList.remove('shadow-sm');
         }
     });
 
-    // 2. Smooth reveal animation
-    const observerOptions = { threshold: 0.1 };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
+    // 2. Simple Scroll Animation for Sections
+    const revealSections = () => {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => {
+            const top = sec.getBoundingClientRect().top;
+            if (top < window.innerHeight - 150) {
+                sec.style.opacity = '1';
+                sec.style.transform = 'translateY(0)';
             }
         });
-    }, observerOptions);
+    };
 
-    document.querySelectorAll('section').forEach(section => {
-        section.style.opacity = "0";
-        section.style.transform = "translateY(20px)";
-        section.style.transition = "all 0.8s ease-out";
-        observer.observe(section);
+    // Initial styles for animation
+    document.querySelectorAll('section').forEach(sec => {
+        sec.style.opacity = '0';
+        sec.style.transform = 'translateY(30px)';
+        sec.style.transition = 'all 0.8s ease-out';
     });
 
-    // 3. Contact Form handling
+    window.addEventListener('scroll', revealSections);
+    revealSections(); // Run once on load
+
+    // 3. Contact Form Submission
     const contactForm = document.getElementById('contactForm');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Thank you Vrushabh! Your message has been sent successfully.');
+        alert('Thank you Vrushabh! I will get back to you shortly.');
         contactForm.reset();
     });
 });
