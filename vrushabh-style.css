@@ -287,3 +287,144 @@ margin:5px 0;
 .card {
   border-radius: 20px;
 }
+
+html {
+
+scroll-behavior: smooth;
+
+}
+
+
+/* SECTION SPACING */
+
+.section {
+
+padding: 100px 0;
+
+}
+
+
+
+/* ================= HOME ================= */
+
+.home-section{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+color:white;
+
+}
+
+
+
+.highlight{
+
+color:#ffc107;
+
+}
+
+
+
+.home-desc{
+
+font-size:18px;
+
+margin-bottom:30px;
+
+opacity:.9;
+
+}
+
+
+
+.home-img{
+
+width:300px;
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+
+
+.home-buttons a{
+
+margin-right:15px;
+
+margin-top:10px;
+
+}
+
+
+
+
+/* ================= ABOUT ================= */
+
+
+.about-img{
+
+width:280px;
+
+border-radius:15px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+
+}
+
+
+
+.about-title{
+
+font-weight:600;
+
+margin-bottom:20px;
+
+}
+
+
+
+.about-text{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#444;
+
+}
+
+
+
+.about-info p{
+
+margin-bottom:8px;
+
+font-size:16px;
+
+}
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+.home-img{
+
+width:220px;
+
+margin-top:30px;
+
+}
+
+}
