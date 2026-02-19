@@ -1,15 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-/* ================================
-EMAILJS INIT
-================================ */
-
-
-emailjs.init("NB0brVfVip0ybnORq");
-
-
-
 /* ================================
 NAVBAR EFFECT
 ================================ */
@@ -60,91 +50,5 @@ sec.style.transition="0.6s";
 
 observer.observe(sec);
 
-});
-
-
-
-/* ================================
-CONTACT FORM SYSTEM
-================================ */
-
-
-const form = document.getElementById('contactForm');
-
-const status = document.getElementById('formStatus');
-
-const btn = document.getElementById('submitBtn');
-
-const btnText = document.getElementById('btnText');
-
-const btnLoader = document.getElementById('btnLoader');
-
-
-
-form.addEventListener('submit', function(e){
-
-e.preventDefault();
-
-
-
-btn.disabled = true;
-
-btnLoader.classList.remove("d-none");
-
-btnText.innerText = "Sending...";
-
-
-
-emailjs.sendForm(
-
-"service_oucm5yn",
-
-"template_pwqlbd9",
-
-this
-
-)
-
-
-.then(()=>{
-
-
-status.innerHTML="✅ Message sent successfully";
-
-status.className="success";
-
-
-form.reset();
-
-
-})
-
-
-.catch(()=>{
-
-
-status.innerHTML="❌ Failed to send message";
-
-status.className="error";
-
-
-})
-
-.finally(()=>{
-
-
-btn.disabled=false;
-
-btnLoader.classList.add("d-none");
-
-btnText.innerText="Send Message";
-
-
-});
-
-
-
-});
-
-
+    }); 
 });

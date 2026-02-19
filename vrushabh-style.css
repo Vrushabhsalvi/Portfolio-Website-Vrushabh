@@ -232,34 +232,3 @@ footer {
     font-size: 14px;
 
 }
-/* CONTACT FORM STATUS */
-
-#formStatus{
-
-margin-top:10px;
-font-weight:600;
-
-}
-
-
-.success{
-
-color:#198754;
-
-}
-
-
-.error{
-
-color:#dc3545;
-
-}
-
-
-button:disabled{
-
-opacity:0.7;
-
-cursor:not-allowed;
-
-}
