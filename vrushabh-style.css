@@ -6,26 +6,59 @@
     --white: #ffffff;
 }
 
+/* =========================
+   Global Styles
+========================= */
+
 body {
     background-color: var(--white);
     color: var(--dark);
     font-family: 'Plus Jakarta Sans', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
+    /* Added improvements */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-.section-padding { padding: 120px 0; }
-.text-blue { color: var(--primary-blue); }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-/* --- Navbar --- */
+section {
+    will-change: transform, opacity;
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.text-blue {
+    color: var(--primary-blue);
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
 .navbar {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-/* --- Hero --- */
-#home { padding-top: 80px; }
+
+/* =========================
+   Hero Section
+========================= */
+
+#home {
+    padding-top: 80px;
+}
 
 .badge-status {
     display: inline-block;
@@ -44,11 +77,21 @@ body {
     z-index: 1;
 }
 
-.image-wrapper img { transition: transform 0.6s ease; }
-.image-wrapper:hover img { transform: scale(1.05); }
+.image-wrapper img {
+    transition: transform 0.6s ease;
+}
 
-/* --- Custom Buttons --- */
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
 .btn-primary-custom {
+
     background: var(--primary-blue);
     color: white;
     border: none;
@@ -56,36 +99,87 @@ body {
     border-radius: 10px;
     font-weight: 600;
     transition: 0.3s;
+
 }
 
 .btn-primary-custom:hover {
+
     background: #0056e0;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 97, 255, 0.2);
     color: white;
+
 }
 
-/* --- Cards --- */
+/* Added click effect */
+
+.btn-primary-custom:active {
+
+    transform: scale(0.98);
+
+}
+
+
+/* =========================
+   Skills Card
+========================= */
+
 .skill-card {
+
     padding: 30px 15px;
     background: var(--white);
     border-radius: 20px;
     transition: 0.3s;
     border: 1px solid rgba(0,0,0,0.05);
+
 }
 
-.skill-card i { font-size: 2rem; margin-bottom: 15px; display: block; }
-.skill-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05) !important; }
-.skill-highlight { border: 2px solid var(--primary-blue); }
+.skill-card i {
+
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+
+}
+
+.skill-card:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+
+}
+
+.skill-highlight {
+
+    border: 2px solid var(--primary-blue);
+
+}
+
+
+/* =========================
+   Project Card
+========================= */
 
 .project-card {
+
     border-radius: 24px !important;
     transition: 0.3s ease;
+
 }
 
-.project-card:hover { transform: translateY(-10px); }
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+/* =========================
+   Social Icons
+========================= */
 
 .social-icon {
+
     width: 45px;
     height: 45px;
     background: var(--white);
@@ -96,19 +190,45 @@ body {
     border: 1px solid rgba(0,0,0,0.1);
     text-decoration: none;
     transition: 0.3s;
+
 }
 
-.social-icon:hover { background: var(--primary-blue); color: white !important; }
+.social-icon:hover {
 
-/* --- Forms --- */
+    background: var(--primary-blue);
+    color: white !important;
+
+}
+
+
+/* =========================
+   Forms
+========================= */
+
 .form-control {
+
     background: var(--white);
     border: 1px solid rgba(0,0,0,0.1);
     padding: 15px;
     border-radius: 12px;
+
 }
 
 .form-control:focus {
+
     border-color: var(--primary-blue);
     box-shadow: 0 0 0 4px rgba(0, 97, 255, 0.1);
+
+}
+
+
+/* =========================
+   Footer (Added)
+========================= */
+
+footer {
+
+    background: var(--light-bg);
+    font-size: 14px;
+
 }
