@@ -6,7 +6,7 @@ EMAILJS INIT
 ================================ */
 
 
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("NB0brVfVip0ybnORq");
 
 
 
