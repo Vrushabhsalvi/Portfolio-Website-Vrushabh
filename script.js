@@ -1,117 +1,150 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ================================
-    // 1. EmailJS Initialization
-    // ================================
 
-    emailjs.init("YOUR_PUBLIC_KEY");
+/* ================================
+EMAILJS INIT
+================================ */
 
 
-    // ================================
-    // 2. Navbar transition on scroll
-    // ================================
-
-    const nav = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', () => {
-
-        if (nav) {
-
-            if (window.scrollY > 30) {
-
-                nav.classList.add('py-2', 'shadow-sm');
-
-            } else {
-
-                nav.classList.remove('py-2', 'shadow-sm');
-
-            }
-
-        }
-
-    });
+emailjs.init("YOUR_PUBLIC_KEY");
 
 
 
-    // ================================
-    // 3. Scroll Animation
-    // ================================
+/* ================================
+NAVBAR EFFECT
+================================ */
 
-    const scrollObserver = new IntersectionObserver((entries) => {
+const nav = document.querySelector('.navbar');
 
-        entries.forEach(entry => {
 
-            if (entry.isIntersecting) {
+window.addEventListener('scroll', () => {
 
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+if(nav){
 
-            }
+nav.classList.toggle('shadow-sm', window.scrollY > 30);
 
-        });
+}
 
-    }, {
-
-        threshold: 0.1
-
-    });
+});
 
 
 
-    document.querySelectorAll('section').forEach(section => {
+/* ================================
+SCROLL ANIMATION
+================================ */
 
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'all 0.6s ease-out';
+const observer = new IntersectionObserver((entries)=>{
 
-        scrollObserver.observe(section);
+entries.forEach(entry=>{
 
-    });
+if(entry.isIntersecting){
 
+entry.target.style.opacity = "1";
 
+entry.target.style.transform = "translateY(0)";
 
-    // ================================
-    // 4. Contact Form Email Sending
-    // ================================
+}
 
-    const contactForm = document.getElementById('contactForm');
+});
 
-    if (contactForm) {
-
-        contactForm.addEventListener('submit', function (e) {
-
-            e.preventDefault();
+});
 
 
-            emailjs.sendForm(
+document.querySelectorAll('section').forEach(sec=>{
 
-                "YOUR_SERVICE_ID",
+sec.style.opacity="0";
 
-                "YOUR_TEMPLATE_ID",
+sec.style.transform="translateY(20px)";
 
-                this
+sec.style.transition="0.6s";
 
-            )
+observer.observe(sec);
 
-            .then(() => {
+});
 
-                alert("Message sent successfully!");
 
-                contactForm.reset();
 
-            })
+/* ================================
+CONTACT FORM SYSTEM
+================================ */
 
-            .catch((error) => {
 
-                alert("Failed to send message");
+const form = document.getElementById('contactForm');
 
-                console.log(error);
+const status = document.getElementById('formStatus');
 
-            });
+const btn = document.getElementById('submitBtn');
 
-        });
+const btnText = document.getElementById('btnText');
 
-    }
+const btnLoader = document.getElementById('btnLoader');
+
+
+
+form.addEventListener('submit', function(e){
+
+e.preventDefault();
+
+
+
+btn.disabled = true;
+
+btnLoader.classList.remove("d-none");
+
+btnText.innerText = "Sending...";
+
+
+
+emailjs.sendForm(
+
+"service_oucm5yn",
+
+"template_pwqlbd9",
+
+this
+
+)
+
+
+.then(()=>{
+
+
+status.innerHTML="✅ Message sent successfully";
+
+status.className="success";
+
+
+form.reset();
+
+
+})
+
+
+.catch(()=>{
+
+
+status.innerHTML="❌ Failed to send message";
+
+status.className="error";
+
+
+})
+
+.finally(()=>{
+
+
+btn.disabled=false;
+
+btnLoader.classList.add("d-none");
+
+btnText.innerText="Send Message";
+
+
+});
+
+
+
+});
 
 
 });
