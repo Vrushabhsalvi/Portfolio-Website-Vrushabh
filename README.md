@@ -42,12 +42,9 @@ This portfolio represents my work, skills, and projects.
 ---
 
 # 📸 Project Preview
+![Screenshot_20-2-2026_202544_vrushabhsalvi github io](https://github.com/user-attachments/assets/5f66166b-0b20-493a-a0c0-2ba715839bd5)
 
-(Add screenshot here later)
 
-Example:
-
-![Portfolio Screenshot](screenshot.png)
 
 ---
 
