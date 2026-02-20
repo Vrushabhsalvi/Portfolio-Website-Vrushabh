@@ -43,7 +43,10 @@ This portfolio represents my work, skills, and projects.
 
 # 📸 Project Preview
 ![Screenshot_20-2-2026_202544_vrushabhsalvi github io](https://github.com/user-attachments/assets/5f66166b-0b20-493a-a0c0-2ba715839bd5)
+
 ![Screenshot_20-2-2026_20337_vrushabhsalvi github io](https://github.com/user-attachments/assets/f2edf8b6-7380-4a7f-8eab-79eecb931fe7)
+
+![Screenshot_20-2-2026_203534_vrushabhsalvi github io](https://github.com/user-attachments/assets/d0a13426-9b28-4bb9-a023-58db82d9e798)
 
 
 
