@@ -50,6 +50,8 @@ This portfolio represents my work, skills, and projects.
 
 ![Screenshot_20-2-2026_203757_vrushabhsalvi github io](https://github.com/user-attachments/assets/0e232e4d-2983-4892-a564-4e900a6ae872)
 
+![Screenshot_20-2-2026_204042_vrushabhsalvi github io](https://github.com/user-attachments/assets/01d24e4d-6d11-472c-85aa-5e9b190e3d96)
+
 
 ---
 
