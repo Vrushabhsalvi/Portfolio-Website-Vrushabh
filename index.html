@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vrushabh Salvi - Frontend Developer specializing in REST API integration and responsive UI design">
+    <meta name="keywords" content="Frontend Developer, React, JavaScript, REST API, Portfolio">
+    <meta property="og:title" content="Vrushabh Salvi | Frontend & SQL Developer">
+    <meta property="og:description" content="Frontend Developer with hands-on experience building production websites">
+    <meta property="og:type" content="website">
     <title>Vrushabh Salvi | Frontend & SQL Developer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%230061ff'>V</text></svg>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,7 +29,12 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="btn btn-primary-custom ms-lg-3" href="#contact">Hire Me</a></li>
+                <li class="nav-item d-flex align-items-center ms-lg-3">
+                    <button id="themeToggle" class="btn btn-sm me-2" aria-label="Toggle dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <a class="btn btn-primary-custom" href="#contact">Hire Me</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -315,108 +326,68 @@
 <!--Contact Section-->
 
 <section id="contact" class="section-padding bg-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="bg-light rounded-5 p-5 shadow-sm border text-center">
+                    <h2 class="fw-bold mb-3">Get In Touch</h2>
+                    <p class="text-muted mb-4">
+                        I'm actively looking for Frontend Developer internship or entry-level opportunities where I can contribute to real-world projects, improve my skills, and grow as a software developer. Feel free to reach out for opportunities, collaborations, or professional discussions.
+                    </p>
 
-<div class="container">
+                    <form id="contactForm" class="mb-4">
+                        <div class="mb-3 text-start">
+                            <label for="contactName" class="form-label fw-semibold">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="contactEmail" class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="your@email.com" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="contactMessage" class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                        <div id="formMessage" class="mt-2"></div>
+                    </form>
 
-<div class="row justify-content-center">
+                    <hr class="my-4 opacity-25">
 
-<div class="col-lg-8">
+                    <!-- EMAIL -->
+                    <p class="mb-3 fs-5">
+                        <i class="fa-solid fa-envelope text-blue me-2"></i>
+                        <a href="mailto:salvivrushabh34@gmail.com" class="text-decoration-none text-dark">
+                            salvivrushabh34@gmail.com
+                        </a>
+                    </p>
 
-<div class="bg-light rounded-5 p-5 shadow-sm border text-center">
+                    <!-- PHONE -->
+                    <p class="mb-4 fs-5">
+                        <i class="fa-solid fa-phone text-blue me-2"></i>
+                        <a href="tel:+918591215075" class="text-decoration-none text-dark">
+                            +91 85912 15075
+                        </a>
+                    </p>
 
+                    <!-- SOCIAL LINKS -->
+                    <div class="d-flex justify-content-center gap-3 mb-4">
+                        <a href="https://github.com/Vrushabhsalvi" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vrushabh-salvi-a34b85242" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
 
-<h2 class="fw-bold mb-3">Get In Touch</h2>
-
-<p class="text-muted mb-4">
-I’m actively looking for Frontend Developer internship or entry-level opportunities where I can contribute to real-world projects, improve my skills, and grow as a software developer. Feel free to reach out for opportunities, collaborations, or professional discussions.
-</p>
-
-
-<!-- EMAIL -->
-
-<p class="mb-3 fs-5">
-
-<i class="fa-solid fa-envelope text-blue me-2"></i>
-
-<a href="mailto:salvivrushabh34@gmail.com" class="text-decoration-none text-dark">
-
-salvivrushabh34@gmail.com
-
-</a>
-
-</p>
-
-
-<!-- PHONE -->
-
-<p class="mb-4 fs-5">
-
-<i class="fa-solid fa-phone text-blue me-2"></i>
-
-<a href="tel:+918591215075" class="text-decoration-none text-dark">
-
-+91 85912 15075
-
-</a>
-
-</p>
-
-
-<!-- SOCIAL LINKS -->
-
-<div class="d-flex justify-content-center gap-3 mb-4">
-
-
-<a href="https://github.com/Vrushabhsalvi"
-
-target="_blank"
-
-class="social-icon">
-
-<i class="fa-brands fa-github"></i>
-
-</a>
-
-
-<a href="https://www.linkedin.com/in/vrushabh-salvi-a34b85242"
-
-target="_blank"
-
-class="social-icon">
-
-<i class="fa-brands fa-linkedin"></i>
-
-</a>
-
-
-</div>
-
-
-<!-- MAP -->
-
-<div class="contact-map">
-
-<iframe
-
-src="https://maps.google.com/maps?q=Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
-
-style="border:0; width:100%; height:200px; border-radius:15px;"
-
-loading="lazy">
-
-</iframe>
-
-</div>
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+                    <!-- BACK TO TOP BUTTON -->
+                    <button id="backToTop" class="btn btn-outline-secondary mt-3" style="display:none;">
+                        <i class="fa-solid fa-arrow-up me-2"></i>Back to Top
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
