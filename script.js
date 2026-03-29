@@ -27,7 +27,7 @@ function updateThemeIcon() {
   const isDark = document.body.classList.contains('dark-mode');
 
   if (themeToggle) {
-    themeToggle.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+    themeToggle.innerHTML = isDark ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
   }
 }
 
