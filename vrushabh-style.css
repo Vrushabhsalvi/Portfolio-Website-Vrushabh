@@ -176,9 +176,14 @@ section {
     overflow: hidden;
     position: relative;
     z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     transition: transform 0.6s ease;
 }
 
